@@ -9,5 +9,5 @@ Tarefas atualizadas no GitHub
 
 :package: nova funcionalidade
 :up: atualização
-:beatle: correção de bug
-:checkred_flag: release
+:beetle: correção de bug
+:checkered_flag: release
