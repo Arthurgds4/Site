@@ -5,3 +5,9 @@ Projeto de apresentação.
 
 Tarefas atualizadas no GitHub
 
+##Ícones
+
+:package: nova funcionalidade
+:up: atualização
+:beatle: correção de bug
+:checkred_flg: release
