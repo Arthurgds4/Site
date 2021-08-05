@@ -5,6 +5,73 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Muli", serif;
+}
+
+a {
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    height: 7vh;
+    opacity: 0.7;
+}
+.logo{
+    font-size: 24px;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+.redes_sociais{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes_sociais i{
+    background-color: black;
+    color: rgb(148, 139, 139);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .7s;
+}
+
+.redes_sociais i:hover{
+    background-color: rgb(46, 41, 41);
 }
 
 header{
@@ -27,7 +94,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
-    animation: efeito_abertura 10s;
+    animation: efeito_abertura 3s;
 }
 @keyframes efeito_abertura {
     0%{
@@ -47,7 +114,7 @@ header{
 .banner h1{
     color: white;
     font-size: 3.5rem;
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--font-primary);
     font-weight: 200;
     text-shadow: .3rem .4rem 2px rgba(0,0,0,0.5);
     opacity: 0;
@@ -55,7 +122,7 @@ header{
 }
 
 .banner p{
-    font-family: "Baloo Da 2";
+    font-family: var(--font-primary);
     color: rgb(240, 236, 236);
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(27, 26, 26, 0.2);
@@ -66,7 +133,7 @@ header{
 }
 
 .banner button{
-    font-family: "Muli", serif;
+    font-family: var(--font-secundary);
     color:rgb(0, 0, 0);
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -91,6 +158,81 @@ header{
     }
 }
 
-.banner button:hover{
-    opacity: 0.7;
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:rgb(0, 0, 0);
+        height: 10vh;
+        opacity: 0.7;
+    }
+    .logo{
+        font-size: .5rem;
+    }
+
+    .redes_sociais{
+        display: inline-block;
+        
+    }
+    .redes_sociais i{
+        background-color: black;
+        color: rgb(148, 139, 139);
+        height: 1rem;
+        width: 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: background-color .7s;
+    }
+
+    .nav-list li{
+        font-size: 1rem;
+        letter-spacing: 3px;
+        margin-left: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
 }
+@media (max-width: 600px) {
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:rgb(0, 0, 0);
+        height: 10vh;
+        opacity: 0.7;
+    }
+
+    .logo{
+        font-size: .5rem;
+    }
+
+    .redes_sociais{
+        display: flex;
+        
+    }
+    .redes_sociais i{
+        background-color: black;
+        color: rgb(148, 139, 139);
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: background-color .7s;
+    }
+
+    .nav-list li{
+        font-size: 1rem;
+        letter-spacing: 3px;
+        margin-left: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+}
+
